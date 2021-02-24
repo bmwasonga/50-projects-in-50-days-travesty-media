@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Newsreader', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before {
+  content: '';
+  background-color: #adc4d3;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #adc4d3;
+  border-radius: 50%;
+  height: 30px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #adc4d3;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: #3498db;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: #adc4d3;
+  cursor: not-allowed;
+}
