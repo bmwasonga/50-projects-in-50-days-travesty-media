@@ -1,11 +1,11 @@
 /* remember to import a cool font for each of the projects */
 
-*{
+* {
   box-sizing: border-box;
-
 }
 
 body {
+  background-color: #6c5b7b;
   font-family: 'Roboto', sans-serif; /*change thies depending on the font that you import */
   display: flex;
   flex-direction: column;
@@ -15,4 +15,38 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+
+h3 {
+  color: floralwhite;
+  margin: 10px 0 20px;
+}
+
+.container {
+  width: 500px;
+}
+
+textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+.tag {
+  background-color: #f67280;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #355c7d;
 }
