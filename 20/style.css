@@ -1,12 +1,11 @@
-/* remember to import a cool font for each of the projects */
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+* {
   box-sizing: border-box;
-
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /*change thies depending on the font that you import */
+  font-family: 'Akaya Telivigala', cursive;
+  background-color: #f67e7d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,4 +14,38 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+
+button {
+  background-color: #621940;
+  font-family: inherit;
+  padding: 20px 30px;
+  border-radius: 15px;
+  color: aliceblue;
+  overflow: hidden;
+  text-transform: uppercase;
+  position: relative;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  animation: scale 0.5s ease-in-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+  from {
+  }
 }
